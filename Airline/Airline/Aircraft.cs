@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    class Aircraft
+    public class Aircraft : Flight
     {
+        public bool OperationalPlane;
+        public int AvailableSeats;
+        public int TravelMiles;
+
+        public Aircraft()
+        {
+
+        }
     }
 }

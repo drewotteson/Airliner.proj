@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    class Schedule
+    public class Schedule
     {
+        public int DepartureTime;
+        public int ArrivalTime;
+        public string City;
+        public Schedule()
+        {
+
+        }
+        
     }
 }

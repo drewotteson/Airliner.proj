@@ -81,24 +81,6 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="7e9d0c97-577b-44eb-b3e1-4a367ae3b62a"
-            name="manifest"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="68dde8fa-7830-40af-8fef-4edae4db5fd4"
-                LastKnownName="array"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="76d029ed-3154-41be-b0b4-a45bdc27fbc3"
             name="travelMiles"
             isLeaf="false"
@@ -131,6 +113,24 @@
               <undefinedTypeMoniker
                 Id="0e600e01-7642-413e-bd06-f8e0186f1bff"
                 LastKnownName="bool"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c94c0a9b-af8e-4893-b3de-73a707d969a1"
+            name="seat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7d479257-7235-437f-aaf4-dc942c7c460c"
+                LastKnownName="int"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -252,6 +252,25 @@
               <undefinedTypeMoniker
                 Id="8e48e051-2ffd-43ff-ac3a-7c081836294a"
                 LastKnownName="string"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60f8839b-5cbf-43cc-b850-2abd03e380f8"
+            name="manifest"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f47ae007-2e2e-4c0a-a916-88520188f0e5"
+                LastKnownName="list"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -530,6 +549,40 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ac31696-7117-4a31-b33c-54aefe0e4de3"
+        name="Seat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="402ff616-1674-4633-9d44-d6e573eb112d"
+            name="location"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="8e48e051-2ffd-43ff-ac3a-7c081836294a"
+                LastKnownName="string"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f47ae007-2e2e-4c0a-a916-88520188f0e5"
+        name="list" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

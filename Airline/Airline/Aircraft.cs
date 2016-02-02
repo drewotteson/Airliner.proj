@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    public class Aircraft : Flight
+    public class Aircraft
     {
-        public bool OperationalPlane;
-        public int AvailableSeats;
-        public int TravelMiles;
+        public bool isOperational;
+        public List<string> availableSeats;
+        public int travelMiles;
 
-        public Aircraft()
+        public Aircraft(int availableSeats, int travelMiles, bool isOperational, Schedule schedule)
         {
 
         }

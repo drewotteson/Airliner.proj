@@ -13,7 +13,7 @@ namespace Airline
         public string origin;
         public int pricePerSeat;
         Manifest manifest;
-        public Flight(Aircraft aircraft, int flightNumber, string origin, string destination, Manifest manifest)
+        public Flight(Aircraft aircraft, Manifest manifest, int flightNumber, string origin, string destination)
         {
 
         }

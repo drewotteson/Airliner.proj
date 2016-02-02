@@ -11,14 +11,12 @@ namespace Airline
         int age;
         string name;
         int money;
-        Flight flight;
 
-        public Passenger(string name, int age, int money, Flight flight)
+        public Passenger(string name, int age, int money)
         {
             this.name = name;
             this.age = age;
             this.money = money;
-            this.flight = flight;
         }
         public void BuyTicket()
         {

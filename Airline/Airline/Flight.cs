@@ -9,13 +9,12 @@ namespace Airline
     public class Flight 
     {
         private List<string> manifest;
-        public string assignedSeat;
         public string destination;
         public int flightNumber;
         public string origin;
         public int pricePerSeat;
 
-        public Flight(Aircraft aircraft, int flightNumber, string origin, string destination /*List<string>manifest*/)
+        public Flight(Aircraft aircraft, int flightNumber, string origin, string destination, List<string> manifest)
         {
 
         }

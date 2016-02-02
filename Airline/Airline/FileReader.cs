@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Airline
 {
-    class FileReader
+    public class FileReader
     {
     }
 }

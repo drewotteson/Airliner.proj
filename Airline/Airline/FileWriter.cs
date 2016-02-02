@@ -13,7 +13,7 @@ namespace Airline
         {
 
         }
-        public void getScore()
+        public void WriteInfoToFile()
         {
             score += 1;
             System.IO.StreamWriter file = new System.IO.StreamWriter("score.txt", true);

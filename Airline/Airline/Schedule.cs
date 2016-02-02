@@ -11,6 +11,13 @@ namespace Airline
         public int DepartureTime;
         public int ArrivalTime;
         public string City;
+        Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>()
+        {
+            {"Chicago", "Departure" },
+            {"Detroit", "Departure" },
+
+        };
+         
         public Schedule()
         {
 

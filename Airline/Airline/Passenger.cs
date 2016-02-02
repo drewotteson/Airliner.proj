@@ -8,9 +8,9 @@ namespace Airline
 {
     public class Passenger
     {
-        int age;
-        string name;
-        int money;
+        public int age;
+        public string name;
+        public int money;
 
         public Passenger(string name, int age, int money)
         {

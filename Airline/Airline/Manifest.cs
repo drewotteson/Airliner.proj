@@ -8,17 +8,23 @@ namespace Airline
 {
     public class Manifest
     {
-        List<string> listOfPassengers;
-        Passenger passenger = new Passenger("Bobby", 32, 1000);
+        public List<Passenger> passengerList;
 
-        public Manifest(Passenger passenger)
+        public Manifest()
         {
+            passengerList = new List<Passenger>();
+        }
+        public void AddNameToManifest(Passenger passenger)
+        {
+            passengerList.Add(passenger);
+        }
+        public List<Passenger> GetPassengerList()
+        {
+            return passengerList;
+        }
 
-        }
-        public void AddNameToManifest(string name)
-        {
-            listOfPassengers.Add(name);
-        }
+    }   
     }
 
-}
+
+

@@ -11,6 +11,7 @@ namespace Airline
         public int age;
         public string name;
         public int money;
+        public int seat;
 
         public Passenger(string name, int age, int money)
         {
@@ -18,8 +19,9 @@ namespace Airline
             this.age = age;
             this.money = money;
         }
-        public void BuyTicket()
+        public void BuySeat()
         {
+
             //reduce their money, and assign them a seat from the array/add to manifest.
         }
     }

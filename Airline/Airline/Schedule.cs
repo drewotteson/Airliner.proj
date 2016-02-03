@@ -12,14 +12,17 @@ namespace Airline
         public int arrivalTime;
         public string city;
 
-        Dictionary<string, string> AirlineSchedule;
-        List<string> keyList;
+        public Dictionary<string, string> AirlineSchedule;
+        //List<string> keyList;
+        public void CurrentDateAndTime()
+        {
+
+        }
        
-         
-        public Schedule()
+        public void chooseCity()
         {
             Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
-            AirlineSchedule.Add("Chicago", "Departure: , Arrival");
+            AirlineSchedule.Add("Chicago", "Departure , Arrival");
             AirlineSchedule.Add("Detroit", "Departure, Arrival");
             AirlineSchedule.Add("Minneapolis", "Departure, Arrival");
             AirlineSchedule.Add("Indianapolis", "Departure, Arrival");
@@ -34,10 +37,27 @@ namespace Airline
             AirlineSchedule.Add("Denver", "Departure, Arrival");
             AirlineSchedule.Add("Seattle", "Departure, Arrival");
             AirlineSchedule.Add("San Francisco", "Departure, Arrival");
-
-            List<string> keyList = new List<string>(this.AirlineSchedule.Keys);
-            
+            foreach (KeyValuePair<string, string> city in AirlineSchedule)
+            {
+                Console.WriteLine(city.Key + " : " + city.Value);
+                Console.Read();
+                    
             }
+            
+        }
+         
+        //public Schedule()
+        //{
+           
+            
+
+        //    List<string> keyList = new List<string>(this.AirlineSchedule.Keys);
+            
+        //    }
+        //public void DisplayCity()
+        //{
+
+        //}
 
         }
         

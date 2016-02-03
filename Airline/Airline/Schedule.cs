@@ -8,6 +8,7 @@ namespace Airline
 {
     public class Schedule
     {
+
         public int departureTime;
         public int arrivalTime;
         public string city;
@@ -45,21 +46,24 @@ namespace Airline
             }
             
         }
-         
+
         //public Schedule()
         //{
-           
-            
+
+
 
         //    List<string> keyList = new List<string>(this.AirlineSchedule.Keys);
-            
-        //    }
+
+        //}
         //public void DisplayCity()
         //{
 
         //}
 
-        }
-        
     }
+        
+
+
+    }
+
 

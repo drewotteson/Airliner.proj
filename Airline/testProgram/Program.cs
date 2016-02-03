@@ -11,13 +11,23 @@ namespace testProgram
     {
         static void Main(string[] args)
         {
+
             Schedule schedule = new Schedule();
             schedule.chooseCity();
+
             //Passenger Drew = new Passenger("Drew", 22, 90);
             //Manifest manifest = new Manifest();
             //manifest.AddNameToManifest(Drew);
             //Console.WriteLine(Drew.name);
+
             //Console.WriteLine(manifest.passengerList[0].name);
+
+            //Console.WriteLine(manifest.GetPassengerList().ToString());
+
+            Aircraft aircraft = new Aircraft(100, 1000, true);
+            aircraft.AssignSeat();
+            Console.ReadLine();
+
 
 
         }

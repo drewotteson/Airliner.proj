@@ -20,6 +20,7 @@ namespace Airline
         }
         public void BuyTicket()
         {
+
             //reduce their money, and assign them a seat from the array/add to manifest.
         }
     }

@@ -62,6 +62,7 @@
     <Compile Include="Manifest.cs" />
     <Compile Include="Passenger.cs" />
     <Compile Include="Schedule.cs" />
+    <Compile Include="Seat.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -23,21 +23,21 @@ namespace Airline
         public void chooseCity()
         {
             Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
-            AirlineSchedule.Add("Chicago", "Departure , Arrival");
-            AirlineSchedule.Add("Detroit", "Departure, Arrival");
-            AirlineSchedule.Add("Minneapolis", "Departure, Arrival");
-            AirlineSchedule.Add("Indianapolis", "Departure, Arrival");
-            AirlineSchedule.Add("New York", "Departure, Arrival");
-            AirlineSchedule.Add("Boston", "Departure, Arrival");
-            AirlineSchedule.Add("Cleveland", "Departure, Arrival");
-            AirlineSchedule.Add("Philadelphia", "Departure, Arrival");
-            AirlineSchedule.Add("Baltimore", "Departure, Arrival");
-            AirlineSchedule.Add("Washington D.C.", "Departure, Arrival");
-            AirlineSchedule.Add("Atlanta", "Departure, Arrival");
-            AirlineSchedule.Add("Houston", "Departure, Arrival");
-            AirlineSchedule.Add("Denver", "Departure, Arrival");
-            AirlineSchedule.Add("Seattle", "Departure, Arrival");
-            AirlineSchedule.Add("San Francisco", "Departure, Arrival");
+            AirlineSchedule.Add("Chicago 200", "Departure 6:00am, Arrival");
+            AirlineSchedule.Add("Detroit 210", "Departure, Arrival");
+            AirlineSchedule.Add("Minneapolis 220", "Departure, Arrival");
+            AirlineSchedule.Add("Indianapolis 230", "Departure, Arrival");
+            AirlineSchedule.Add("New York 240", "Departure, Arrival");
+            AirlineSchedule.Add("Boston 250", "Departure, Arrival");
+            AirlineSchedule.Add("Cleveland 260", "Departure, Arrival");
+            AirlineSchedule.Add("Philadelphia 270", "Departure, Arrival");
+            AirlineSchedule.Add("Baltimore 280", "Departure, Arrival");
+            AirlineSchedule.Add("Washington D.C. 290", "Departure, Arrival");
+            AirlineSchedule.Add("Atlanta 300", "Departure, Arrival");
+            AirlineSchedule.Add("Houston 310", "Departure, Arrival");
+            AirlineSchedule.Add("Denver 320", "Departure, Arrival");
+            AirlineSchedule.Add("Seattle 330", "Departure, Arrival");
+            AirlineSchedule.Add("San Francisco 340", "Departure, Arrival");
             foreach (KeyValuePair<string, string> city in AirlineSchedule)
             {
                 Console.WriteLine(city.Key + " : " + city.Value);

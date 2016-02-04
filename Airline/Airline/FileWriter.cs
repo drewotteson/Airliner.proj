@@ -15,10 +15,7 @@ namespace Airline
         }
         public void WriteInfoToFile()
         {
-            score += 1;
-            System.IO.StreamWriter file = new System.IO.StreamWriter("score.txt", true);
-            file.WriteLine(score);
-            file.Close();
+
         }
     }
 }

@@ -11,9 +11,17 @@ namespace testProgram
     {
         static void Main(string[] args)
         {
+            Seat seat = new Seat();
+            seat.AllSeats();
+            Console.ReadLine();
 
-            Schedule schedule = new Schedule();
-            schedule.chooseCity();
+            //Passenger Drew = new Passenger("Drew", 22, 90);
+            //Manifest manifest = new Manifest();
+            //manifest.AddNameToManifest(Drew);
+            //Console.WriteLine(Drew.name);
+
+            //Schedule schedule = new Schedule();
+            //schedule.chooseCity();
 
             //Passenger Drew = new Passenger("Drew", 22, 90);
             //Manifest manifest = new Manifest();
@@ -24,9 +32,13 @@ namespace testProgram
 
             //Console.WriteLine(manifest.GetPassengerList().ToString());
 
-            Aircraft aircraft = new Aircraft(100, 1000, true);
-            aircraft.AssignSeat();
-            Console.ReadLine();
+            //Aircraft aircraft = new Aircraft(100, 1000, true);
+            //aircraft.AssignSeat();
+            //Console.ReadLine();
+
+            //Aircraft aircraft = new Aircraft(100, 1000, true);
+            //aircraft.AssignSeat();
+            //Console.ReadLine();
 
 
 

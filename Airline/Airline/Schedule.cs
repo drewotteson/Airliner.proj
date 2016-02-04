@@ -9,6 +9,7 @@ namespace Airline
     public class Schedule
     {
 
+
         public int departureTime;
         public int arrivalTime;
         public string city;
@@ -19,10 +20,11 @@ namespace Airline
         {
 
         }
-       
+
         public void chooseCity()
         {
             Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
+
             AirlineSchedule.Add("Chicago 200", "Departure 6:00am, Arrival");
             AirlineSchedule.Add("Detroit 210", "Departure, Arrival");
             AirlineSchedule.Add("Minneapolis 220", "Departure, Arrival");
@@ -38,32 +40,37 @@ namespace Airline
             AirlineSchedule.Add("Denver 320", "Departure, Arrival");
             AirlineSchedule.Add("Seattle 330", "Departure, Arrival");
             AirlineSchedule.Add("San Francisco 340", "Departure, Arrival");
+
+
+
             foreach (KeyValuePair<string, string> city in AirlineSchedule)
             {
                 Console.WriteLine(city.Key + " : " + city.Value);
                 Console.Read();
-                    
+
             }
-            
+
         }
-
-        //public Schedule()
-        //{
-
-
-
-        //    List<string> keyList = new List<string>(this.AirlineSchedule.Keys);
-
-        //}
-        //public void DisplayCity()
-        //{
-
-        //}
-
     }
-        
+
+}
 
 
-    }
+
+
+
+//public Schedule()
+//{
+
+
+
+//    List<string> keyList = new List<string>(this.AirlineSchedule.Keys);
+
+//}
+//public void DisplayCity()
+//{
+
+//}
+
 
 

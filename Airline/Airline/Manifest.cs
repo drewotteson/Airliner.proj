@@ -22,8 +22,7 @@ namespace Airline
         {
             return passengerList;
         }
-    }   
-
+    }
 }
 
 

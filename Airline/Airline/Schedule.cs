@@ -25,21 +25,21 @@ namespace Airline
         {
             Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
 
-            AirlineSchedule.Add("Chicago 200", "Departure 6:00am, Arrival");
-            AirlineSchedule.Add("Detroit 210", "Departure, Arrival");
-            AirlineSchedule.Add("Minneapolis 220", "Departure, Arrival");
-            AirlineSchedule.Add("Indianapolis 230", "Departure, Arrival");
-            AirlineSchedule.Add("New York 240", "Departure, Arrival");
-            AirlineSchedule.Add("Boston 250", "Departure, Arrival");
-            AirlineSchedule.Add("Cleveland 260", "Departure, Arrival");
-            AirlineSchedule.Add("Philadelphia 270", "Departure, Arrival");
-            AirlineSchedule.Add("Baltimore 280", "Departure, Arrival");
-            AirlineSchedule.Add("Washington D.C. 290", "Departure, Arrival");
-            AirlineSchedule.Add("Atlanta 300", "Departure, Arrival");
-            AirlineSchedule.Add("Houston 310", "Departure, Arrival");
-            AirlineSchedule.Add("Denver 320", "Departure, Arrival");
-            AirlineSchedule.Add("Seattle 330", "Departure, Arrival");
-            AirlineSchedule.Add("San Francisco 340", "Departure, Arrival");
+            AirlineSchedule.Add("Chicago 200", "Departure 6:00am/Arrival 8:00am");
+            AirlineSchedule.Add("Detroit 210", "Departure 5:00am/Arrival 9:00am");
+            AirlineSchedule.Add("Minneapolis 220", "Departure 7:00am/Arrival 11:00am");
+            AirlineSchedule.Add("Indianapolis 230", "Departure 1:00pm/Arrival 4:00pm");
+            AirlineSchedule.Add("New York 240", "Departure 7:00am/Arrival 2:00pm");
+            AirlineSchedule.Add("Boston 250", "Departure 8:00am/Arrival 4:00pm");
+            AirlineSchedule.Add("Cleveland 260", "Departure 5:00am/Arrival 11:00am");
+            AirlineSchedule.Add("Philadelphia 270", "Departure 6:00am/Arrival 1:00pm");
+            AirlineSchedule.Add("Baltimore 280", "Departure 7:00am/Arrival 2:00pm");
+            AirlineSchedule.Add("Washington D.C. 290", "Departure 6:00am/Arrival 3:00pm");
+            AirlineSchedule.Add("Atlanta 300", "Departure 2:00pm/Arrival 9:00pm");
+            AirlineSchedule.Add("Houston 310", "Departure 1:00pm/Arrival 11:30pm");
+            AirlineSchedule.Add("Denver 320", "Departure 8:00am/Arrival 3:00pm");
+            AirlineSchedule.Add("Seattle 330", "Departure 7:00am/Arrival 4:30pm");
+            AirlineSchedule.Add("San Francisco 340", "Departure 6:00am/Arrival 4:00pm");
 
 
 

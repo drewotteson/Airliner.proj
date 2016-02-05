@@ -6,13 +6,33 @@
         xmlns:local="clr-namespace:Airline"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+
+        <DataTemplate x:Key="ItemTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding Property1}"/>
+            </StackPanel>
+        </DataTemplate>
+
+    </Window.Resources>
     <Grid>
-
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="201"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="0,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="0,183,0,0" Click="button_Click"/>
-
-        <Button Content="Button" HorizontalAlignment="Left" Margin="32,40,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-
+        <Rectangle Margin="10" Stroke="Black" Fill="#CC010101" StrokeThickness="3" RadiusY="10.5" RadiusX="10.5"/>
+        <Ellipse Height="36.667" Margin="0,261.333,22,0" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Style="{DynamicResource SubmitButton}" HorizontalAlignment="Right" Width="126">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF37C41E" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Margin="20.666,18.667,0,116.334" Width="156.667" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Collection}" d:DataContext="{d:DesignData /SampleData/SeatSampleData.xaml}" SelectionChanged="listBox_SelectionChanged"/>
+        <Ellipse HorizontalAlignment="Right" Height="32.333" Margin="0,18.667,22,0" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="30.667">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF6D0000" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ namespace Airline
         public List<string> mainList = new List<string> { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
         public List<string> subList = new List<string> { "A", "B", "C", "D" };
 
+
         public Seat()
         {
 
@@ -24,7 +25,6 @@ namespace Airline
                 {
                     Console.WriteLine(mainList[x] + subList[y]);
                 }
-                
             }
         }
     }

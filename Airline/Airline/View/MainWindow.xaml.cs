@@ -23,6 +23,9 @@ namespace Airline
         public MainWindow()
         {
             InitializeComponent();
+            DataBase database = new DataBase();
+
+            DataContext = database;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

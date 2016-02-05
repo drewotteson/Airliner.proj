@@ -8,14 +8,21 @@
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
 
+        <local:DataBase x:Key="DataBaseDataSource" d:IsDataSource="True"/>
+
         <DataTemplate x:Key="ItemTemplate">
             <StackPanel>
                 <TextBlock Text="{Binding Property1}"/>
             </StackPanel>
         </DataTemplate>
+        <DataTemplate x:Key="SeatTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
 
     </Window.Resources>
-    <Grid>
+    <Grid DataContext="{Binding Source={StaticResource DataBaseDataSource}}">
         <Rectangle Margin="10" Stroke="Black" Fill="#CC010101" StrokeThickness="3" RadiusY="10.5" RadiusX="10.5"/>
         <Ellipse Height="36.667" Margin="0,261.333,22,0" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Style="{DynamicResource SubmitButton}" HorizontalAlignment="Right" Width="126">
             <Ellipse.Fill>
@@ -25,7 +32,7 @@
                 </LinearGradientBrush>
             </Ellipse.Fill>
         </Ellipse>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Margin="20.666,18.667,0,116.334" Width="156.667" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Collection}" d:DataContext="{d:DesignData /SampleData/SeatSampleData.xaml}" SelectionChanged="listBox_SelectionChanged"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Margin="20.666,18.667,0,116.334" Width="156.667" ItemTemplate="{DynamicResource SeatTemplate}" ItemsSource="{Binding seatList, Source={StaticResource DataBaseDataSource}}" d:DataContext="{d:DesignData /SampleData/SeatSampleData.xaml}" SelectionChanged="listBox_SelectionChanged" DataContext="{Binding}"/>
         <Ellipse HorizontalAlignment="Right" Height="32.333" Margin="0,18.667,22,0" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="30.667">
             <Ellipse.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

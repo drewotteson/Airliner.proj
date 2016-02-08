@@ -37,6 +37,10 @@ namespace Airline
             {
                 return _seatID;
             }
+            set
+            {
+                _seatID = value;
+            }
         }
 
         public List<Seat> AllSeats()

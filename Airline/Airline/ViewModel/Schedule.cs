@@ -13,15 +13,12 @@ namespace Airline
         public int departureTime;
         public int arrivalTime;
         public string city;
+        
 
         public Dictionary<string, string> AirlineSchedule;
         //List<string> keyList;
-        public void CurrentDateAndTime()
-        {
 
-        }
-
-        public void chooseCity()
+        public string chooseCity()
         {
             Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
 
@@ -41,18 +38,14 @@ namespace Airline
             AirlineSchedule.Add("Seattle 330", "Departure 7:00am/Arrival 4:30pm");
             AirlineSchedule.Add("San Francisco 340", "Departure 6:00am/Arrival 4:00pm");
 
-
-
             foreach (KeyValuePair<string, string> city in AirlineSchedule)
             {
-                Console.WriteLine(city.Key + " : " + city.Value);
-                Console.Read();
-
+                return (city.Key + " : " + city.Value);
             }
 
+            return city;
         }
     }
-
 }
 
 

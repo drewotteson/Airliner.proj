@@ -8,46 +8,50 @@ namespace Airline
 {
     public class Schedule
     {
+        public List<string> mainList = new List<string> { "Chicago", "Detroit", "New York", "Las Vegas" };
+        public List<string> subList = new List<string> { "Depart 6:00am Arrive 8:00am", "Depart 7:00am Arrive 9:00am", "Depart 10:00am Arrive 2:00pm", "Depart 6:00 am Arrive 1:00pm" };
 
+        private string _flightCity;
+        private string _flightTime;
+        private string _flightID;
 
-        public int departureTime;
-        public int arrivalTime;
-        public string city;
-        
-
-        public Dictionary<string, string> AirlineSchedule;
-        //List<string> keyList;
-
-        public string chooseCity()
+        public Schedule(string flightCity, string flightTime)
         {
-            Dictionary<string, string> AirlineSchedule = new Dictionary<string, string>();
+            this._flightCity = flightCity;
+            this._flightTime = flightTime;
+            this._flightID = (flightCity + flightTime);
+        }
+        public Schedule()
+        {
 
-            AirlineSchedule.Add("Chicago 200", "Departure 6:00am/Arrival 8:00am");
-            AirlineSchedule.Add("Detroit 210", "Departure 5:00am/Arrival 9:00am");
-            AirlineSchedule.Add("Minneapolis 220", "Departure 7:00am/Arrival 11:00am");
-            AirlineSchedule.Add("Indianapolis 230", "Departure 1:00pm/Arrival 4:00pm");
-            AirlineSchedule.Add("New York 240", "Departure 7:00am/Arrival 2:00pm");
-            AirlineSchedule.Add("Boston 250", "Departure 8:00am/Arrival 4:00pm");
-            AirlineSchedule.Add("Cleveland 260", "Departure 5:00am/Arrival 11:00am");
-            AirlineSchedule.Add("Philadelphia 270", "Departure 6:00am/Arrival 1:00pm");
-            AirlineSchedule.Add("Baltimore 280", "Departure 7:00am/Arrival 2:00pm");
-            AirlineSchedule.Add("Washington D.C. 290", "Departure 6:00am/Arrival 3:00pm");
-            AirlineSchedule.Add("Atlanta 300", "Departure 2:00pm/Arrival 9:00pm");
-            AirlineSchedule.Add("Houston 310", "Departure 1:00pm/Arrival 11:30pm");
-            AirlineSchedule.Add("Denver 320", "Departure 8:00am/Arrival 3:00pm");
-            AirlineSchedule.Add("Seattle 330", "Departure 7:00am/Arrival 4:30pm");
-            AirlineSchedule.Add("San Francisco 340", "Departure 6:00am/Arrival 4:00pm");
+        }
+        public override string ToString()
+        {
+            return _flightID;
+        }
 
-            foreach (KeyValuePair<string, string> city in AirlineSchedule)
+        public string seatID
+        {
+            get
             {
-                return (city.Key + " : " + city.Value);
+                return _flightCity;
             }
+        }
 
-            return city;
+        public List<Seat> AllSeats()
+        {
+            List<Seat> SeatList = new List<Seat>();
+            for (int x = 0; x < mainList.Count; x++)
+            {
+                for (int y = 0; y < subList.Count; y++)
+                {
+                    SeatList.Add(new Seat(mainList[x], subList[y]));
+                }
+            }
+            return SeatList;
         }
     }
 }
-
 
 
 

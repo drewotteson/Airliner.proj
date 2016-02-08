@@ -8,6 +8,16 @@
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
 
+        <local:DataBase x:Key="DataBaseDataSource3" d:IsDataSource="True"/>
+
+        <local:DataBase x:Key="DataBaseDataSource2" d:IsDataSource="True"/>
+
+        <local:DataBase x:Key="DataBaseDataSource1" d:IsDataSource="True"/>
+
+        <local:Schedule x:Key="ScheduleDataSource1" d:IsDataSource="True"/>
+
+        <local:Schedule x:Key="ScheduleDataSource" d:IsDataSource="True"/>
+
         <local:DataBase x:Key="DataBaseDataSource" d:IsDataSource="True"/>
 
         <DataTemplate x:Key="ItemTemplate">
@@ -60,6 +70,31 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <DataTemplate x:Key="SeatTemplate1">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="SeatTemplate2">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID}"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ScheduleTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ScheduleTemplate1">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ScheduleTemplate2">
+            <StackPanel>
+                <TextBlock Text="{Binding seatID, Mode=OneWay}"/>
+            </StackPanel>
+        </DataTemplate>
 
     </Window.Resources>
     <Grid DataContext="{Binding Source={StaticResource DataBaseDataSource}}">
@@ -68,5 +103,6 @@
         <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="10,28,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxAge" HorizontalAlignment="Left" Height="23" Margin="10,56,0,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="buttonCreate" Content="Submit" HorizontalAlignment="Left" Margin="396,266,0,0" VerticalAlignment="Top" Width="101" Height="32" FontWeight="Bold" Click="buttonCreate_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="279" Margin="160,19,0,0" VerticalAlignment="Top" Width="150" DataContext="{Binding Source={StaticResource DataBaseDataSource3}}" ItemTemplate="{DynamicResource ScheduleTemplate2}" ItemsSource="{Binding flightList}"/>
     </Grid>
 </Window>

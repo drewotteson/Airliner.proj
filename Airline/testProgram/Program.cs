@@ -11,8 +11,8 @@ namespace testProgram
     {
         static void Main(string[] args)
         {
-            Seat seat = new Seat();
-            seat.AllSeats();
+            Schedule schedule = new Schedule();
+            schedule.AllFlights();
             Console.ReadLine();
 
             //Passenger Drew = new Passenger("Drew", 22, 90);

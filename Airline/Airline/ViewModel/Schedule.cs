@@ -15,11 +15,10 @@ namespace Airline
         private string _flightTime;
         private string _flightID;
 
-        public Schedule(string flightCity, string flightTime)
+        public Schedule(string flightCity)
         {
             this._flightCity = flightCity;
-            this._flightTime = flightTime;
-            this._flightID = (flightCity + flightTime);
+            this._flightID = (flightCity);
         }
         public Schedule()
         {
@@ -38,20 +37,21 @@ namespace Airline
             }
         }
 
-        public List<Seat> AllSeats()
+        public List<Schedule> AllFlights()
         {
-            List<Seat> SeatList = new List<Seat>();
+            List<Schedule> FlightList = new List<Schedule>();
             for (int x = 0; x < mainList.Count; x++)
             {
-                for (int y = 0; y < subList.Count; y++)
-                {
-                    SeatList.Add(new Seat(mainList[x], subList[y]));
-                }
+                //for (int y = 0; y < subList.Count; y++)
+                //{
+                FlightList.Add(new Schedule(mainList[x]));
+                
             }
-            return SeatList;
+            return FlightList;
+        }
+
         }
     }
-}
 
 
 

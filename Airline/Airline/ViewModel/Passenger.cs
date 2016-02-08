@@ -8,35 +8,35 @@ namespace Airline
 {
     public class Passenger
     {
-        public string age;
-        public string name;
-        public int money;
-        public int seat;
+        private string age;
+        private string name;
 
-        public Passenger(string name, string age, int money)
+        public Passenger()
         {
 
-            this.name = name;
-            this.age = age;
-            this.money = money;
-            this.seat = seat;
         }
-        public string getUserName()
+        public string getUserName
         {
-            Console.WriteLine("Please enter your first & last name.");
-            name = Console.ReadLine();
-            return name;
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
         }
-        public string getUserAge()
+
+        public string getUserAge
         {
-            Console.WriteLine("Enter your date of birth. 00/00/00");
-            age = Console.ReadLine();
-            return age;
-        }
-        public void BuySeat()
-        {
-            //Nick is currently doing
-            //reduce their money, and assign them a seat from the array/add to manifest.
+            get
+            {
+                return age;
+            }
+            set
+            {
+                age = value;
+            }
         }
     }
 }

@@ -42,5 +42,24 @@ namespace Airline
         {
 
         }
+
+        private void buttonCreate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Passenger passenger = new Passenger();
+                Seat seat = new Seat();
+                passenger.getUserName = textBoxName.Text;
+                passenger.getUserAge = textBoxAge.Text;
+                seat.seatID = listBoxSeat.SelectedItem.ToString();
+                
+                SaveXML.SaveData(passenger, seat.seatID, "passengers.xml");
+                MessageBox.Show("You have submitted your name to the flight.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
